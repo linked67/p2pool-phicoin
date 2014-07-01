@@ -41,7 +41,7 @@ phicoin=math.Object(
         #BLOCKHASH_FUNC=lambda data: pack.IntType(256).unpack(__import__('xcoin_hash').getPoWHash(data)),
         POW_FUNC=lambda data: pack.IntType(256).unpack(__import__('ltc_scrypt').getPoWHash(data)),
         BLOCK_PERIOD=150, # s
-        SYMBOL='SFR',
+        SYMBOL='PHI',
         CONF_FILE_FUNC=lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'phicoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/phicoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.phicoin'), 'phicoin.conf'),
         BLOCK_EXPLORER_URL_PREFIX='',
         ADDRESS_EXPLORER_URL_PREFIX='',
